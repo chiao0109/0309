@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+<body>
+    <form namme="addform" action="userAdd" method="post" accept-charset="utf-8">
+        <h1>Account - Add</h1>
+        <div>
+            <label>userid：</label>
+            <input class="text" type="text" name="userid" placeholder="userid"/>
+        </div>
+        <div>
+            <label>password：</label>
+            <input class="text" type="text" name="password" placeholder="password">
+        </div>
+        <div>
+            <label>email：</label>
+            <input class="text" type="text" name="email" placeholder="email">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Back" onclick="javascript: location.href='/'">
+        </div>
+    </form>
+</body>
+</html>
